@@ -3,87 +3,235 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ritul Ingole | Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <title>Ritul Ingole | MERN Stack Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=DM+Sans:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- Navbar -->
-  <nav>
-    <div class="logo">Ritul.</div>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <!-- Background Doodles -->
+  <div class="doodle-circles">
+    <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2">
+      <circle cx="50" cy="50" r="30"/>
+      <circle cx="50" cy="50" r="20"/>
+      <circle cx="50" cy="50" r="10"/>
+    </svg>
+  </div>
 
-  <!-- Hero -->
-  <section id="home" class="hero">
+  <div class="doodle-x">
+    <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M20 20 L80 80 M80 20 L20 80"/>
+    </svg>
+  </div>
+
+  <div class="doodle-triangle">
+    <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3">
+      <polygon points="50,10 90,90 10,90"/>
+    </svg>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="hero-section">
     <div class="hero-content">
-      <h1>Hi, I'm <span>Ritul Ingole</span></h1>
-      <p>Aspiring Software Engineer | Web Developer</p>
-      <a href="#projects" class="btn">Explore My Work</a>
-    </div>
 
-    <div class="hero-image">
-      <img src="assets/image.png" alt="profile">
-    </div>
-  </section>
+      <span class="sticker-badge">● Available for Opportunities</span>
 
-  <!-- About -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I build scalable web applications and machine learning solutions.
-      Passionate about solving real-world problems through code.
-    </p>
-  </section>
+      <h1 class="hero-title">
+        Hey, I'm <span class="hand-underline">Ritul Ingole</span>
+      </h1>
 
-  <!-- Projects -->
-  <section id="projects">
-    <h2>My Projects</h2>
+      <h2 class="hero-subtitle">
+        Computer Engineering Student & MERN Stack Developer
+      </h2>
 
-    <div class="project-container">
+      <p class="hero-description">
+        I build real-world web applications with strong backend architecture, 
+        practical AI integrations and Cloude deployment. Passionate about solving problems 
+        through scalable systems and continuous learning.
+      </p>
 
-      <div class="project-card">
-        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71" alt="">
-        <div class="project-info">
-          <h3>Energy Prediction ML</h3>
-          <p>Optimized electricity usage using XGBoost.</p>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <img src="https://images.unsplash.com/photo-1508780709619-79562169bc64" alt="">
-        <div class="project-info">
-          <h3>Expense Tracker</h3>
-          <p>Track and visualize daily expenses.</p>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6" alt="">
-        <div class="project-info">
-          <h3>Virtual Herbal Garden</h3>
-          <p>Interactive 3D medicinal plant platform.</p>
-        </div>
+      <div class="hero-buttons">
+        <button class="chunky-button" onclick="document.getElementById('skills').scrollIntoView()">
+          View Skills
+        </button>
+        <button class="chunky-button button-secondary" onclick="document.getElementById('contact').scrollIntoView()">
+          Contact Me
+        </button>
       </div>
 
     </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: ritul@example.com</p>
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title rotated-title">Skills & Tools ⚡</h2>
+
+      <div class="skills-grid">
+
+        <div>
+          <h3 class="category-title">Frontend</h3>
+          <div class="skills-list">
+            <div class="outlined-box">HTML</div>
+            <div class="outlined-box">CSS</div>
+            <div class="outlined-box">JavaScript</div>
+            <div class="outlined-box">React.js</div>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="category-title">Backend</h3>
+          <div class="skills-list">
+            <div class="outlined-box">Node.js</div>
+            <div class="outlined-box">Express.js</div>
+            <div class="outlined-box">MongoDB</div>
+            <div class="outlined-box">REST APIs</div>
+            <div class="outlined-box">AWS Cloud</div>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="category-title">Learning & Other</h3>
+          <div class="skills-list">
+            <div class="outlined-box">Cloud Computing (Beginner)</div>
+            <div class="outlined-box">Git & GitHub</div>
+            <div class="outlined-box">Problem Solving</div>
+            <div class="outlined-box">Hackathons</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
   </section>
 
-  <footer>
-    <p>© 2026 Ritul Ingole</p>
+  <!-- ABOUT -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title rotated-title">About Me ✨</h2>
+
+      <div class="about-grid">
+
+        <div class="about-content">
+          <p>
+            I'm an Computer engineering student focused on 
+            backend development and Cloud Computing.
+          </p>
+
+          <p>
+            I enjoy building scalable systems and learning how real-world 
+            applications are structured. My goal is to continuously improve 
+            my backend skills and explore cloud computing and Devops.
+          </p>
+
+          <ul class="about-list">
+            <li>💻 Building MERN Stack Projects</li>
+            <li>🚀 Participating in Hackathons</li>
+            <li>🧠 Learning Cloud Computing</li>
+            <li>📚 Improving Problem-Solving Skills</li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="stat-card stat-card-orange">
+            <div class="stat-number">3+</div>
+            <div>Projects Built</div>
+          </div>
+
+          <div class="stat-card stat-card-blue">
+            <div class="stat-number">2+</div>
+            <div>Hackathons Participated</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-number">∞</div>
+            <div>Learning Everyday</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container-small">
+      <h2 class="section-title rotated-title">Let's Connect 💬</h2>
+
+      <div class="contact-grid">
+
+        <div>
+          <div class="contact-method">
+            <div class="contact-icon icon-yellow">✉️</div>
+            <div>
+              <strong>Email</strong>
+                </br>
+                <a href="mailto:ritulmi007@gmail.com" class="contact-link">ritulmi007@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-method">
+            <div class="contact-icon icon-black">💻</div>
+            <div>
+              <strong>GitHub</strong>
+              <div>
+                <a href="https://github.com/Ritul-Ingole" target="_blank" class="contact-link" rel="noopener noreferrer">github.com/Ritul-Ingole</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-method">
+            <div class="contact-icon icon-red">💼</div>
+            <div>
+              <strong>LinkedIn</strong>
+              </br>
+              <a href="https://linkedin.com/in/ritul-ingole-529a58298" target="_blank" class="contact-link">linkedin.com/in/ritul-ingole-529a58298</a>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <form class="contact-form">
+            <input type="text" placeholder="Your Name" class="chunky-input">
+            <input type="email" placeholder="Your Email" class="chunky-input">
+            <textarea placeholder="Your Message" class="chunky-textarea"></textarea>
+            <button class="chunky-button button-full">Send Message</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <div class="footer-name">Ritul Ingole</div>
+          <div>Computer Engineering Student & MERN Developer</div>
+        </div>
+
+        <div class="footer-nav">
+          <a href="#skills" class="footer-link">Skills</a>
+          <a href="#contact" class="footer-link">Contact</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        © <span id="year"></span> Ritul Ingole
+      </div>
+    </div>
   </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 
 </body>
 </html>
